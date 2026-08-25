@@ -37,6 +37,9 @@ scoreboard players set #ta roten.sys 0
 # 強化ティア定義（index = ティア番号）
 data modify storage roten:main tiers set value [{n:0,name:"-"},{n:1,name:"効率強化 I"},{n:3,name:"効率強化 II"},{n:5,name:"効率強化 III"},{n:7,name:"効率強化 IV"},{n:9,name:"効率強化 V"},{n:16,name:"2x2マス掘り"},{n:25,name:"幸運 I"},{n:36,name:"幸運 II"},{n:49,name:"幸運 III"},{n:64,name:"3x3マス掘り"},{n:81,name:"4x4マス掘り"},{n:100,name:"ガチャ解放"},{n:121,name:"鉱石→コイン自動変換"},{n:144,name:"5x5マス掘り"},{n:169,name:"2秒ごと自動採掘"},{n:196,name:"1秒ごと自動採掘"},{n:225,name:"0.5秒ごと自動採掘"}]
 
+# 掘り終わり済みチャンクの記録（無ければ作る）
+execute unless data storage roten:main done run data modify storage roten:main done set value []
+
 # 判定用の「完全な空気」参照領域を用意する
 function roten:init_ref
 schedule function roten:init_ref 40t replace

@@ -1,11 +1,7 @@
-# 掘り終えたチャンクからランダムな方向に 1 チャンク空けて、次の 3 チャンクを指定する
-execute store result score #d roten.tmp run random value 0..3
-scoreboard players set #dx roten.tmp 0
-scoreboard players set #dz roten.tmp 0
-execute if score #d roten.tmp matches 0 run scoreboard players set #dx roten.tmp 1
-execute if score #d roten.tmp matches 1 run scoreboard players set #dx roten.tmp -1
-execute if score #d roten.tmp matches 2 run scoreboard players set #dz roten.tmp 1
-execute if score #d roten.tmp matches 3 run scoreboard players set #dz roten.tmp -1
+# 掘り終えたチャンクからランダムな方向に 1 チャンク空けて、次の 3 チャンクを指定する。
+# 掘り終わり済みのチャンクに重なる方向は引き直す。
+scoreboard players set #try roten.tmp 0
+function roten:chunk/pick_dir
 
 scoreboard players set #i roten.tmp 2
 function roten:chunk/next_step

@@ -13,5 +13,6 @@ scoreboard players set @a roten.fe 0
 scoreboard players set @a roten.au 0
 scoreboard players set @a roten.di 0
 scoreboard players set @a roten.pt 0
+data modify storage roten:main done set value []
 function roten:upgrade/labels
 tellraw @a [{"text":"[露天インクリメンタル] ","color":"gold"},{"text":"進行状況をリセットしました","color":"red"}]

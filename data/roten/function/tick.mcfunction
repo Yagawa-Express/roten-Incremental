@@ -1,6 +1,6 @@
 # メニュー（トリガー）受付
 scoreboard players enable @a roten_ui
-execute as @a[scores={roten_ui=1..}] run function roten:ui/dispatch
+execute as @a[scores={roten_ui=1..}] at @s run function roten:ui/dispatch
 
 scoreboard players add #t5 roten.sys 1
 scoreboard players add #t20 roten.sys 1
