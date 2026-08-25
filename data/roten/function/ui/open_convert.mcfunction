@@ -1,0 +1,11 @@
+data modify storage roten:tmp s1 set value "OFF"
+data modify storage roten:tmp s2 set value "OFF"
+data modify storage roten:tmp s3 set value "OFF"
+data modify storage roten:tmp s4 set value "OFF"
+data modify storage roten:tmp s5 set value "OFF"
+execute if score @s roten.c1 matches 1 run data modify storage roten:tmp s1 set value "ON"
+execute if score @s roten.c2 matches 1 run data modify storage roten:tmp s2 set value "ON"
+execute if score @s roten.c3 matches 1 run data modify storage roten:tmp s3 set value "ON"
+execute if score @s roten.c4 matches 1 run data modify storage roten:tmp s4 set value "ON"
+execute if score @s roten.c5 matches 1 run data modify storage roten:tmp s5 set value "ON"
+function roten:ui/convert_m with storage roten:tmp

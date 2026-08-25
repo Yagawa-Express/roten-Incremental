@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:notice",
+	"title": "運ゲー？",
+	"can_close_with_escape": true,
+	"body": [
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "…まだ何もない。\n81 チャンク掘り終えると何かが起きるらしい。",
+				"color": "gray"
+			}
+		}
+	],
+	"action": {
+		"label": "戻る",
+		"width": 200,
+		"action": {
+			"type": "minecraft:run_command",
+			"command": "trigger roten_ui set 1"
+		}
+	}
+}

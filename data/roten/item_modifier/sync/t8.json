@@ -1,0 +1,17 @@
+{
+	"function": "minecraft:set_components",
+	"components": {
+		"minecraft:custom_name": {
+			"text": "露天ツルハシ Lv.8",
+			"color": "aqua",
+			"italic": false
+		},
+		"minecraft:enchantments": {
+			"minecraft:efficiency": 5,
+			"minecraft:fortune": 2
+		},
+		"minecraft:item_model": "minecraft:golden_pickaxe",
+		"minecraft:max_damage": 2000,
+		"minecraft:damage": 0
+	}
+}

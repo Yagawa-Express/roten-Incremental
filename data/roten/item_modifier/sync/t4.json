@@ -1,0 +1,16 @@
+{
+	"function": "minecraft:set_components",
+	"components": {
+		"minecraft:custom_name": {
+			"text": "露天ツルハシ Lv.4",
+			"color": "aqua",
+			"italic": false
+		},
+		"minecraft:enchantments": {
+			"minecraft:efficiency": 4
+		},
+		"minecraft:item_model": "minecraft:iron_pickaxe",
+		"minecraft:max_damage": 2000,
+		"minecraft:damage": 0
+	}
+}

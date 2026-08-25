@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:notice",
+	"title": "確率配分！",
+	"can_close_with_escape": true,
+	"body": [
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "コッパー: 鉱石系 90% / レア 10%\nアイアン: 鉱石系 75% / レア 25%\nゴールド: 鉱石系 55% / レア 45%\nダイヤモンド: レア 70% / 超レア 30%\nプラチナ: レア 40% / 超レア 60%\n\nコインは 1 チャンク掘り終えるごとに手に入る。\n121 チャンクからは鉱石を自動でコインに変換できる。",
+				"color": "yellow"
+			}
+		}
+	],
+	"action": {
+		"label": "戻る",
+		"width": 200,
+		"action": {
+			"type": "minecraft:run_command",
+			"command": "trigger roten_ui set 3"
+		}
+	}
+}

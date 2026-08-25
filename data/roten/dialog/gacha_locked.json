@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:notice",
+	"title": "ガチャ？",
+	"can_close_with_escape": true,
+	"body": [
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "ガチャの気配がする。\n100 チャンク掘り終えると回せるようになる。",
+				"color": "light_purple"
+			}
+		}
+	],
+	"action": {
+		"label": "戻る",
+		"width": 200,
+		"action": {
+			"type": "minecraft:run_command",
+			"command": "trigger roten_ui set 1"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"criteria": {
+		"mined": {
+			"trigger": "minecraft:item_durability_changed",
+			"conditions": {
+				"item": {
+					"items": "minecraft:iron_pickaxe",
+					"predicates": {
+						"minecraft:custom_data": "{roten:1}"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "roten:pickaxe/on_mine"
+	}
+}

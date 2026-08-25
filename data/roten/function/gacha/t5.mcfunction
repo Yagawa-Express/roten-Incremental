@@ -1,0 +1,3 @@
+scoreboard players operation #v roten.tmp = @s roten.c5
+scoreboard players set @s roten.c5 1
+execute if score #v roten.tmp matches 1 run scoreboard players set @s roten.c5 0

@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:notice",
+	"title": "露天インクリメンタル",
+	"external_title": "露天インクリメンタル",
+	"can_close_with_escape": true,
+	"body": [
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "露天掘りインクリメンタルのメニューを開きます。",
+				"color": "gray"
+			}
+		}
+	],
+	"action": {
+		"label": "メニューを開く",
+		"width": 200,
+		"action": {
+			"type": "minecraft:run_command",
+			"command": "trigger roten_ui set 1"
+		}
+	}
+}

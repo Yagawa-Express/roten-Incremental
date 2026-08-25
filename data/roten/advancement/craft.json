@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"crafted": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "minecraft:iron_pickaxe"
+			}
+		}
+	},
+	"rewards": {
+		"function": "roten:pickaxe/on_craft"
+	}
+}
