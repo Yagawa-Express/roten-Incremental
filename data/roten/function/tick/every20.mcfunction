@@ -18,6 +18,7 @@ execute as @a run function roten:pickaxe/sync
 # 取り残された判定用マーカーの掃除
 kill @e[type=minecraft:marker,tag=roten_probe]
 kill @e[type=minecraft:marker,tag=roten_start]
+kill @e[type=minecraft:marker,tag=roten_aim]
 
 # 指定チャンクを掘り終えたか判定
 execute as @e[type=minecraft:marker,tag=roten_chunk] at @s run function roten:chunk/scan

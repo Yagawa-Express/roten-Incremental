@@ -2,6 +2,8 @@
 kill @e[type=minecraft:marker,tag=roten_chunk]
 kill @e[type=minecraft:marker,tag=roten_probe]
 kill @e[type=minecraft:marker,tag=roten_start]
+kill @e[type=minecraft:marker,tag=roten_aim]
+scoreboard players set @a roten.la 0
 scoreboard players set #total roten.chunks 0
 scoreboard players set #remain roten.chunks 0
 scoreboard players set #lcx roten.chunks 0

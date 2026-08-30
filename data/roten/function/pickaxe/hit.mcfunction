@@ -1,4 +1,12 @@
-# 実行者: プレイヤー / 実行位置: 視線の先のブロック
+# 実行者: プレイヤー / 実行位置: 掘る中心のブロック
+# 掘る一辺の長さ
+scoreboard players set #size roten.tmp 1
+execute if score #tier roten.tier matches 6.. run scoreboard players set #size roten.tmp 2
+execute if score #tier roten.tier matches 10.. run scoreboard players set #size roten.tmp 3
+execute if score #tier roten.tier matches 11.. run scoreboard players set #size roten.tmp 4
+execute if score #tier roten.tier matches 14.. run scoreboard players set #size roten.tmp 5
+execute if score #size roten.tmp matches ..1 run return 0
+
 # 指定チャンクの中でだけ範囲掘りが有効
 summon minecraft:marker ~ ~ ~ {Tags:["roten_probe"]}
 scoreboard players set #in roten.tmp 0

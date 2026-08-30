@@ -10,7 +10,6 @@
 			"minecraft:efficiency": 5
 		},
 		"minecraft:item_model": "minecraft:golden_pickaxe",
-		"minecraft:max_damage": 2000,
-		"minecraft:damage": 0
+		"minecraft:unbreakable": {}
 	}
 }

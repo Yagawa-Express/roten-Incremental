@@ -14,6 +14,10 @@ scoreboard objectives add roten.c2 dummy "自動変換:鉄"
 scoreboard objectives add roten.c3 dummy "自動変換:金"
 scoreboard objectives add roten.c4 dummy "自動変換:ダイヤ"
 scoreboard objectives add roten.c5 dummy "自動変換:ネザライト"
+scoreboard objectives add roten.lx dummy "照準X"
+scoreboard objectives add roten.ly dummy "照準Y"
+scoreboard objectives add roten.lz dummy "照準Z"
+scoreboard objectives add roten.la dummy "照準あり"
 scoreboard objectives add roten_ui trigger "メニュー"
 
 # 定数
